@@ -24,31 +24,6 @@ public class GiftCardDetails {
     @FindBy(how= How.ID, using="select_12")
     public static WebElement selectVal;
 
-    @FindBy(how= How.ID, using="select_6")
-    public static WebElement quantity;
-
-    @FindBy(how= How.ID, using="options_11_text")
-    public static WebElement senderName;
-
-    @FindBy(how= How.ID, using="senderemail")
-    public static WebElement senderEmail;
-
-    @FindBy(how= How.ID, using="cfsenderemail")
-    public static WebElement confSendEmail;
-
-    @FindBy(how= How.ID, using="options_9_text")
-    public static WebElement recName;
-
-    @FindBy(how= How.ID, using="rcemail")
-    public static WebElement recEmail;
-
-    @FindBy(how= How.ID, using="cfrcemail")
-    public static WebElement confRecEmail;
-
-    @FindBy(how= How.ID, using="options_7_text")
-    public static WebElement message;
-
-   // @FindBy(how= How.CLASS_NAME, using="button btn-cart add-to-cart-button-super")
 
     @FindBy(how= How.XPATH, using="//*[@class='button btn-cart add-to-cart-button-super']")
     public static WebElement addToCart;
