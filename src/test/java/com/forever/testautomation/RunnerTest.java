@@ -9,7 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
  */
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "classpath:features/GiftCard.feature")
+@CucumberOptions(features = "classpath:features/Peach1.feature")
 public class RunnerTest {
 
 }

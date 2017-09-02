@@ -27,7 +27,7 @@ public class CustomDriver implements DriverSource {
        String whichBrowser = System.getProperty("browserName").toLowerCase();
 
         if(whichBrowser.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver","C:\\softwares\\chromedriver_win32\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver","E:\\softwares\\automation\\chromedriver_win32\\chromedriver.exe");
             capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("test-type");

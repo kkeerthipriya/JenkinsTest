@@ -1,13 +1,10 @@
 package com.forever.testautomation.steps;
 
-import com.forever.testautomation.hooks.BrowserHooks;
-import com.forever.testautomation.pageobjects.GiftCardDetails;
-import com.forever.testautomation.pageobjects.LoginPage;
+import com.forever.testautomation.pageobjects.LoginDetails;
+
 import net.thucydides.core.annotations.Step;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,21 +22,18 @@ public class LoginSteps {
     @Step
     public void openBrowser() {
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS) ;
-        driver.get("https://mono.forevernew.com.au/");
+        driver.get("http://site24.way2sms.com/content/index.html?");
     }
     @Step
     public void enterLoginDetails(String name,String pass){
-        LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-        WebElement we=loginPage.login;
-        if(we !=null){
-            we.click();
-        }
+        LoginDetails loginPage = PageFactory.initElements(driver, LoginDetails.class);
+        WebElement we=loginPage.uname;
+
         we=loginPage.uname;
         we.sendKeys(name);
         we=loginPage.pwd;
         we.sendKeys(pass);
-        we=loginPage.logn;
-        we.click();
+
     }
 
 }
